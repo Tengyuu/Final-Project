@@ -16,5 +16,22 @@ namespace Final_Project
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Jigsaw_Puzzle f = new Jigsaw_Puzzle();
+            this.Hide();
+            f.FormClosed += (s, args) => this.Show();
+            f.Show();
+       
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Sliding_Puzzle f = new Sliding_Puzzle();
+            this.Hide();
+            f.FormClosed += (s, args) => this.Show();
+            f.Show();
+        }
     }
 }
