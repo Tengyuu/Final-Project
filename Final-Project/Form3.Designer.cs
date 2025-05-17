@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_choosePic = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -56,21 +56,21 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Location = new System.Drawing.Point(521, 83);
+            this.pictureBox10.Location = new System.Drawing.Point(491, 83);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(336, 265);
+            this.pictureBox10.Size = new System.Drawing.Size(349, 265);
             this.pictureBox10.TabIndex = 7;
             this.pictureBox10.TabStop = false;
             // 
-            // button2
+            // btn_choosePic
             // 
-            this.button2.Location = new System.Drawing.Point(633, 376);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 30);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_choosePic.Location = new System.Drawing.Point(604, 376);
+            this.btn_choosePic.Name = "btn_choosePic";
+            this.btn_choosePic.Size = new System.Drawing.Size(143, 30);
+            this.btn_choosePic.TabIndex = 6;
+            this.btn_choosePic.Text = "選擇圖片";
+            this.btn_choosePic.UseVisualStyleBackColor = true;
+            this.btn_choosePic.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -175,7 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 452);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_choosePic);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "Sliding_Puzzle";
@@ -199,7 +199,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_choosePic;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox9;
