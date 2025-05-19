@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.btn_choosePic = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -41,6 +42,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_time = new System.Windows.Forms.Label();
+            this.lbl_steps = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -170,11 +174,31 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lbl_time
+            // 
+            this.lbl_time.AutoSize = true;
+            this.lbl_time.Location = new System.Drawing.Point(398, 117);
+            this.lbl_time.Name = "lbl_time";
+            this.lbl_time.Size = new System.Drawing.Size(59, 12);
+            this.lbl_time.TabIndex = 8;
+            this.lbl_time.Text = "時間:00:00";
+            // 
+            // lbl_steps
+            // 
+            this.lbl_steps.AutoSize = true;
+            this.lbl_steps.Location = new System.Drawing.Point(400, 162);
+            this.lbl_steps.Name = "lbl_steps";
+            this.lbl_steps.Size = new System.Drawing.Size(62, 12);
+            this.lbl_steps.TabIndex = 9;
+            this.lbl_steps.Text = "移動步數:0";
+            // 
             // Sliding_Puzzle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 452);
+            this.Controls.Add(this.lbl_steps);
+            this.Controls.Add(this.lbl_time);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.btn_choosePic);
             this.Controls.Add(this.button1);
@@ -194,6 +218,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -212,5 +237,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_time;
+        private System.Windows.Forms.Label lbl_steps;
+        private System.Windows.Forms.Timer timer1;
     }
 }

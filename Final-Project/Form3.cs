@@ -16,6 +16,8 @@ namespace Final_Project
         //全域
         Image[] ans_imgs = new Image[9];
         Bitmap img = null;
+        int timer_min = 0 , timer_second = 0;
+        int steps = 0;
         public Sliding_Puzzle()
         {
             InitializeComponent();
@@ -66,6 +68,14 @@ namespace Final_Project
                 MessageBox.Show("請先選擇一張圖片!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            timer1.Enabled = true; timer_min = 0; timer_second = 0;
+            steps = 0; lbl_steps.Text = $"移動步數:0";
+            panel1.Enabled = true;
+            CreatePuzzleBoard();
+        }
+        public void CreatePuzzleBoard()
+        {
 
         }
     }
